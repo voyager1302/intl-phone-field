@@ -1,3 +1,4 @@
+
 (function (window) {
   function initIntlPhoneField(input, options = {}) {
     if (!window.intlTelInput) {
@@ -10,7 +11,7 @@
       preferredCountries: options.preferredCountries || ["il", "us", "gb"],
       localizedCountries: options.localizedCountries || {
         il: "ישראל",
-        us: "ארה"ב",
+        us: "ארה״ב",
         gb: "בריטניה"
       },
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
