@@ -11,7 +11,7 @@
       preferredCountries: options.preferredCountries || ["il", "us", "gb"],
       localizedCountries: options.localizedCountries || {
         il: "ישראל",
-        us: "ארה\"ב",
+        us: "USA",
         gb: "בריטניה"
       },
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
