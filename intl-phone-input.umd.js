@@ -1,3 +1,4 @@
+
 (function (window) {
   function initIntlPhoneField(input, options = {}) {
     if (!window.intlTelInput) {
