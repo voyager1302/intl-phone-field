@@ -1,6 +1,4 @@
 // dist/intl-phone-input.js
-// גרסה ממוזערת (לשימוש ישיר)
-// src/phone-input.js
 
 export function createPhoneInput(inputElement, options = {}) {
   if (!inputElement) throw new Error("inputElement is required");
@@ -24,7 +22,22 @@ export function createPhoneInput(inputElement, options = {}) {
 
   return {
     getNumber: () => iti.getNumber(),
+    isValidNumber: () => iti.isValidNumber(),
     getInstance: () => iti,
     destroy: () => iti.destroy(),
   };
 }
+
+// הקצאות גלובליות ל-CDN
+window.initIntlPhoneField = function (element, options) {
+  const api = createPhoneInput(element, options);
+  element._phoneAPI = api;
+};
+
+window.getIntlPhoneNumber = function (element) {
+  return element._phoneAPI ? element._phoneAPI.getNumber() : "";
+};
+
+window.isIntlPhoneValid = function (element) {
+  return element._phoneAPI ? element._phoneAPI.isValidNumber() : false;
+};
