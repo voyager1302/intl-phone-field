@@ -1,0 +1,11 @@
+{
+  "name": "intl-phone-input",
+  "version": "1.0.0",
+  "description": "Reusable phone input field using intl-tel-input for vanilla JS projects",
+  "main": "dist/phone-input.js",
+  "module": "src/phone-input.js",
+  "style": "style/phone-input.css",
+  "keywords": ["phone", "input", "intl-tel-input", "vanilla-js"],
+  "author": "Yehuda Shimshon",
+  "license": "MIT"
+}
